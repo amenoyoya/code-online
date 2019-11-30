@@ -38,3 +38,27 @@ $ sudo ln -s ~/go/bin/gofmt /usr/local/bin/gofmt
 $ go version
 go version go1.13.4 linux/amd64
 ```
+
+***
+
+## 入門
+
+[A Tour of Go](https://go-tour-jp.appspot.com/list) を参考に
+
+### Go言語のコンパイル
+コンパイルは基本的に `go build <ソースファイル>` で可能
+
+```bash
+# 入門プロジェクト: tuto/ ディレクトリ
+$ cd tuto
+
+# 01_hello.go をコンパイル
+$ go build 01_hello.go
+
+## => ソースコードに問題なければ 01_hello (01_hello.exe) というバイナリファイルが生成される
+
+# 実行
+$ ./01_hello
+
+## => "Hello, 世界"
+```
