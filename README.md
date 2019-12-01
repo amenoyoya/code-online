@@ -18,6 +18,15 @@
 ```powershell
 # install golang
 > choco install golang
+
+## => installed to C:\Go
+
+# enable `go`, `gofmt` command
+> setx PATH "$env:path;C:\Go\bin"
+
+# confirm version
+> go version
+go version go1.13.4 windows/amd64
 ```
 
 #### on Ubuntu 18.04
