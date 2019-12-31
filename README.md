@@ -18,7 +18,7 @@ Goをインストールして使っても良いが、Dockerを使えばインス
 ```bash
 ./ # カレントディレクトリ = 作業ディレクトリ（appコンテナの /go/ ディレクトリにマウントされる）
 |_ Dockerfile # appコンテナビルド設定
-|_ docker-compose.yml # appコンテナ: golang:latest
+|_ docker-compose.yml # appコンテナ: golang:alpine
 ```
 
 ### Usage

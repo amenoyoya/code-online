@@ -11,3 +11,6 @@ services:
     volumes:
       # ./ => docker://app:/go/ にマウント
       - ./:/go/
+    environment:
+      # TimeZone を Asia/Tokyo に
+      TZ: Asia/Tokyo
