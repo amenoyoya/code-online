@@ -8,9 +8,20 @@
 - Editor:
     - VS Code
 
-### Installation
+***
 
-#### on Windows 10
+## Docker
+Goをインストールして使っても良いが、Dockerを使えばインストール不要で使える
+
+Read [docker/README.md](./docker/README.md)
+
+***
+
+## Installation
+
+コンピュータにインストールして使う場合（for Windows10, Ubuntu 18.04）
+
+### on Windows 10
 [Chocolatey](https://chocolatey.org/) を使うのが楽
 
 `Win + X` |> `A` キー => 管理者権限PowerShell起動
@@ -29,7 +40,7 @@
 go version go1.13.4 windows/amd64
 ```
 
-#### on Ubuntu 18.04
+### on Ubuntu 18.04
 [最新の公式パッケージ](https://golang.org/dl/) をダウンロードしてインストールする
 
 ```bash

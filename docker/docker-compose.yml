@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  # go application container
+  ## コマンドとして使うことを想定
+  ## $ docker-compose run --rm go ...
+  go:
+    build: . # ./Dockerfile をビルド
+    entrypoint:
+      - go
+    volumes:
+      # ./ => docker://app:/go/ にマウント
+      - ./:/go/
