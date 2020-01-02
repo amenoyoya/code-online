@@ -8,7 +8,7 @@ package main
 import "fmt"
 
 func main() {
-	// 以下は i, j int = 1, 2 と同等
+	// 以下は var i, j int = 1, 2 と同等
 	i, j := 1, 2
 
 	fmt.Println(i, j)
