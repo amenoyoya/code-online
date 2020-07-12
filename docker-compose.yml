@@ -1,16 +1,19 @@
 version: "3"
 
 services:
-  # go application container
-  ## コマンドとして使うことを想定
-  ## $ docker-compose run --rm go ...
   go:
-    build: . # ./Dockerfile をビルド
+    # ./Dockerfile からビルド
+    build: ./
+    # 動作検証のため、コンテナを稼働状態にして内部シェルに入りたい場合は tty: true にする
+    # tty: true
     entrypoint:
+      # コンテナ実行時 go コマンド実行
       - go
     volumes:
-      # ./ => docker://app:/go/ にマウント
-      - ./:/go/
+      # ./ => docker://go:/app/ にマウント
+      - ./:/app/
+    # 作業ディレクトリ: docker://go:/app/
+    working_dir: /app/
     environment:
       # TimeZone を Asia/Tokyo に
       TZ: Asia/Tokyo
