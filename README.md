@@ -50,16 +50,15 @@ $ docker-compose run --rm go build -o test/main test/main.go
 
 ```powershell
 # install golang
-> choco install golang
+> choco install -y golang
 
-## => installed to C:\Go
+## => installed to C:\Program Files\Go
 
-# enable `go`, `gofmt` command
-> setx PATH "$env:path;C:\Go\bin"
+# -- Restart PowerShell for reflecting the environmental variables
 
 # confirm version
 > go version
-go version go1.13.4 windows/amd64
+go version go1.17.1 windows/amd64
 ```
 
 ### on Ubuntu 18.04
