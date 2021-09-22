@@ -69,7 +69,7 @@ go version go1.17.1 windows/amd64
 $ cd ~
 
 # download golang binary
-$ wget -O - https://dl.google.com/go/go1.13.4.linux-amd64.tar.gz | tar zxvf -
+$ wget -O - https://dl.google.com/go/go1.17.1.linux-amd64.tar.gz | tar zxvf -
 
 # create symbolic link to /usr/local/bin/ => enable `go`, `gofmt` command
 $ sudo ln -s ~/go/bin/go /usr/local/bin/go
@@ -77,7 +77,7 @@ $ sudo ln -s ~/go/bin/gofmt /usr/local/bin/gofmt
 
 # confirm version
 $ go version
-go version go1.13.4 linux/amd64
+go version go1.17.1 linux/amd64
 ```
 
 ***
